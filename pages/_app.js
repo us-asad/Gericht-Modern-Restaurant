@@ -6,7 +6,7 @@ import "styles/container-styles/Gallery.css";
 import "styles/container-styles/Header.css";
 import "styles/container-styles/Intro.css";
 import "styles/container-styles/Laurels.css";
-import "styles/container-styles/Menu.css";
+import "styles/container-styles/SpecialMenu.css";
 // Component Styles
 import "styles/component-styles/FooterOverlay.css";
 import "styles/component-styles/MenuItem.css";
