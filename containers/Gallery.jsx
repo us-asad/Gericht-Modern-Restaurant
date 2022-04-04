@@ -12,16 +12,7 @@ for (const image in images) {
 export default function Gallery() {
   const scrollRef = useRef(null);
 
-  const handleScroll = direction => {
-    const { current } = scrollRef;
-
-    current.scrollLeft += direction === "left" ? -300 : 300;
-    // if(direction === "left") {
-    //   current.scrollLeft -= 300;
-    // } else {
-    //   current.scrollLeft += 300;      
-    // }
-  }
+  const handleScroll = direction => scrollRef.current.scrollLeft += direction === "left" ? -300 : 300;
 
   return (
     <section id="gallery" className="app__gallery flex__center">
@@ -45,7 +36,7 @@ export default function Gallery() {
           ref={scrollRef}
         >
           {galleryImages?.map((image, index) => (
-            <div key={`gallery_image${index}`} className="app__gallery-images_card flex_center">
+            <div key={`gallery_image${index}`} className="app__gallery-images_card flex__center">
               <img
                 src={image.src}
                 alt="gallery"
